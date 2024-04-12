@@ -74,8 +74,10 @@ for creating new column following DAX expression was written;
    Revenue_2020 = Stock[2020_units_sold]*Stock[Retail_Price]
 
 - Step 14 : Calculated “Profit_2020” column was created in the “Stock” table.
+  
 
 Profit_2020 = Stock[Revenue_2020]-(Stock[COGS]*Stock[2020_units_sold])
+
 
 -Step 15:  A clustered column chart was also added to the report design area representing the Profit_2020/ Category.
 
