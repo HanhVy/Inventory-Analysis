@@ -18,12 +18,12 @@ This dashboard helps fictitious Warm Hands Incorporated company figure out which
 - Step 4 : Check errors and make sure all formats are correct. “Price” table has errors with some of its values. “Stock” table has a blank in “SKU-ID”. When merging the table “Price” into the table “Stock”, realize that just 103/104 match. In “SKU-ID” column of the “Stock” table contains an error, replacing “85135 C” value to “85135C”.
 
 
--Step 5: Merging the addtional information of the table “Price” into the table “Stock”. 
+- Step 5: Merging the addtional information of the table “Price” into the table “Stock”. 
 
 
--Step 6: Import another file “categories.csv” and use the first row as a header.
+- Step 6: Import another file “categories.csv” and use the first row as a header.
 
--Step 7: There are any mistakes in the “category” column of the “Categories” table. Using Replace Value to correct any mistake into one of five category types: “office & school”, “decoration”, “jewelry”,”home accessories”, “toys & edibles”.
+- Step 7: There are any mistakes in the “category” column of the “Categories” table. Using Replace Value to correct any mistake into one of five category types: “office & school”, “decoration”, “jewelry”,”home accessories”, “toys & edibles”.
 
 Before
 
@@ -33,11 +33,11 @@ After
 
 
 
--Step 8: Fix the column “ID” in the “categories” table so that it is similar to other tables.
+- Step 8: Fix the column “ID” in the “categories” table so that it is similar to other tables.
 
 
 
--Step 9: Cleaning the “Country” column in the “Orders” table. 
+- Step 9: Cleaning the “Country” column in the “Orders” table. 
 First: Split Column by Delimiter “-”
 
 
