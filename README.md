@@ -23,33 +23,43 @@ This dashboard helps fictitious Warm Hands Incorporated company figure out which
 
 
 - Step 6 :Import another file “categories.csv” and use the first row as a header.
+![Screenshot 2024-04-11 134724](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/445c07d6-f8dd-4bbb-81f5-09891a023729)
+
 
 - Step 7 :There are any mistakes in the “category” column of the “Categories” table. Using Replace Value to correct any mistake into one of five category types: “office & school”, “decoration”, “jewelry”,”home accessories”, “toys & edibles”.
 
 Before
 
+![Screenshot 2024-04-11 110953](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/9ccead2a-60f4-439b-90b6-c0d9f508c7ba)
 
 
 After 
 
+![Screenshot 2024-04-11 111030](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/49967829-c4b5-4b9a-8b84-212a877b4850)
+![Screenshot 2024-04-11 110953](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/3453473e-b3fa-4f09-9c0c-73d7b4d034ae)
 
 
 - Step 8 :Fix the column “ID” in the “categories” table so that it is similar to other tables.
 
+![Screenshot 2024-04-11 111300](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/51a7b071-b022-46f7-a3e9-2d6849fed965)
 
 
 - Step 9 :Cleaning the “Country” column in the “Orders” table. 
 
 First: Split Column by Delimiter “-”
 
+![Screenshot 2024-04-11 134724](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/c64219ad-7752-4562-8578-96f1f73b6b12)
+
 
 Second: “Country” column have a error value, Replace value “Spain.” into “Spain”
 
+![Screenshot 2024-04-11 134938](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/2596be09-bc6b-47cf-a346-14cb8ef81762)
 
 
 
 - Step 10 :A 100% stacked column chart was also added to the report design area representing the total quantity of sale/country. While creating this visual, a field named "category" was also added to the Legends bucket, thus number of quantities are also segregated according to the category. 
 
+![Screenshot 2024-04-11 135417](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/825f0ab0-7a79-40db-9e85-001988dd6bc6)
 
 
 
@@ -63,10 +73,13 @@ Third: Change the format of all columns in the “Cost” table except the “SK
 - Step 12 : Calculated “COGS”column was created in which.
 
 
- 
+ ![Screenshot 2024-04-11 141138](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/ee950bcc-41aa-418d-bd53-80ca842cd435)
+
 
 
 - Step 13 : A clustered column chart was also added to the report design area representing the COGS/ Category.
+
+![Screenshot 2024-04-11 142344](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/51711fee-db28-417d-b38b-a7943bb51835)
 
 => There are 104 items within five categories, for which decoration and jewelry categories have the highest average costs of goods sold per item of around five dollars
 - Step 15 : Calculated “Revenue_2020” column was created in the “Stock” table.
@@ -85,6 +98,7 @@ for creating new column following DAX expression was written,
 
 - Step 17:  A clustered column chart was also added to the report design area representing the Profit_2020/ Category.
 
+![Screenshot 2024-04-11 145125](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/53079eda-01ba-4790-b47f-e43668a42875)
 
 
 
@@ -94,8 +108,10 @@ The item “Grow a flytrap or sunflower” is a top seller with more than 16,000
 - Step 18:  Create Drill Through to more detail revenue, profit, COGS about items of category group.
 
 
+![Screenshot 2024-04-11 154151](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/d814038e-7b82-4e8c-b795-8662d9851bf2)
 
 
+![Screenshot 2024-04-11 154111](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/3c168199-97c0-44ab-aafb-50ecc7c4dd2e)
 
 
 
@@ -132,11 +148,15 @@ for creating new column following DAX expression was written;
 
 - Step 23: A Pie column chart was also added to the report design area representing the Quantity/Year.
 
+![Screenshot 2024-04-11 170211](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/bb19035c-44fb-4ad6-b569-98b3e316a25c)
+
 => Total Quantity dominated with 92.69%.
 
 
 - step 24: 	Adding two clustered column charts to the report design area representing the Quantity_2021/Description and  Quantity_2022/Description.
 
+![Screenshot 2024-04-11 170730](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/694fdbbc-20b8-4f59-8e02-72e713e3eb17)
+![Screenshot 2024-04-11 170902](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/deb1e968-1c94-4eca-8754-eb99198dd99e)
 
 
 => In 2021 and 2022, The item “Grow a flytrap or sunflower” is a top seller with 26,12% in 2022 and 10.85% in 2021.
@@ -181,7 +201,7 @@ for creating new column following DAX expression was written;
 
 
 
--Step 29: Create a new table called “Revenue_2021”. 
+- Step 29: Create a new table called “Revenue_2021”. 
 
 
 for creating new column following DAX expression was written;
@@ -198,7 +218,7 @@ for creating new column following DAX expression was written;
 
      Perccentrevenue2020 = Stock[Revenue_2020]/SUM(Stock[Revenue_2020])
 
--Step 28: Create a new table called “percentrevenue2021”.
+- Step 31: Create a new table called “percentrevenue2021”.
 
 
 for creating new column following DAX expression was written;
@@ -210,8 +230,9 @@ Perccentrevenue2021 = Stock[Revenue_2021]/SUM(Stock[Revenue_2021])
 
 
 
--Step 29: A cluttered column chart was also added to the report design area representing the Perccentrevenue2020 and Perccentrevenue2021  /Description.
+- Step 32: A cluttered column chart was also added to the report design area representing the Perccentrevenue2020 and Perccentrevenue2021  /Description.
 
+![Screenshot 2024-04-11 182711](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/6a999477-301f-40ee-aa22-05bc9d7e856c)
 
 
 
@@ -222,7 +243,7 @@ Although the item “Grow a flytrap or sunflower” is a top seller with more th
 The item “Set of 6 soldier skittles” has the highest grown percentage from 2020 to 2021 with 1.91% in 2020 and 5.6% in 2021.
 
 
--Step 30: Create a new table called “ABC” from the “Stock” table that only retains the columns “SKU-ID”, “Description”,”Revenue_2021”, “Perccentrevenue2021”.
+- Step 33: Create a new table called “ABC” from the “Stock” table that only retains the columns “SKU-ID”, “Description”,”Revenue_2021”, “Perccentrevenue2021”.
 
 
 for creating new column following DAX expression was written;
@@ -233,7 +254,7 @@ ABC = SELECTCOLUMNS(Stock,"SKU-ID",Stock[SKU-ID],"Description",Stock[Description
 
 
 
--Step 31: Sort “percent_revenueStock_2021”in descending.Create a new column called “CP_revenue” to calculate a cumulative increase over the sort.
+- Step 34: Sort “percent_revenueStock_2021”in descending.Create a new column called “CP_revenue” to calculate a cumulative increase over the sort.
 
 
 for creating new column following DAX expression was written;
@@ -243,7 +264,7 @@ CP_revenue = CALCULATE(SUM(ABC[percent_revenueStock_2021]),FILTER(ABC,ABC[Revenu
 
 
 
--Step 32: Create a new column “ABC_class” to classify a cumulative value.
+- Step 35: Create a new column “ABC_class” to classify a cumulative value.
 
 
 for creating new column following DAX expression was written;
@@ -252,7 +273,10 @@ for creating new column following DAX expression was written;
 ABC_class = IF(ABC[CP_revenue]<0.7,"A[High Value]",IF(ABC[CP_revenue]>0.9,"C[Low Value]","B[Medium Value]"))
 
 
-####Insights
+# Insights
+
+
+### Overveiw page
 
 A “Preliminary results” page report was created on Power BI Desktop 
 
