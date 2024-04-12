@@ -1,6 +1,6 @@
 
 
-# Inventory Analysis-Dashboard
+# Inventory Analysis - Dashboard
 
 
 ## Problem Statement
@@ -271,21 +271,23 @@ for creating new column following DAX expression was written;
 
 
 ABC_class = IF(ABC[CP_revenue]<0.7,"A[High Value]",IF(ABC[CP_revenue]>0.9,"C[Low Value]","B[Medium Value]"))
+- Step 36: Create a new column called "Rank" based on the descending order of column.
 
-
+for creating new column following DAX expression was written;
+ 
+     Rank = RANK(DENSE,ORDERBY(ABC[percent_revenueStock_2021],DESC))
 # Insights
 
+## Overveiw page
+![Screenshot 2024-04-12 164157](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/1a8f98cd-5367-4ae1-b386-0b15e7e47934)
 
-### Overveiw page
-
-A “Preliminary results” page report was created on Power BI Desktop 
-
-
+- Diffetence in average and mean inventory turnover from A and B class items doesn't significantly, just 0.21 for average and 0.07 for mean Which means they sell almost equally fast.
 
 
-Following inferences can be drawn from the dashboard;
+## Preliminary results
+![Screenshot 2024-04-12 165710](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/6f060307-8a29-4c71-9b77-8902123452cd)
 
-### [1] Unit of sold: from 2020 to 2021
+ [1] Unit of sold: from 2020 to 2021
 
    Unit of sold in 2020 = 148000 (54.08%)
    
@@ -293,74 +295,45 @@ Following inferences can be drawn from the dashboard;
    
 Thus, Unit of solid has a downward trend, specifically down 8.16.
 
-### [2]Percent of total revenue: 
 
-    “Set of 6 soldier skittles” has the highest increase from 2020 to 2021.
-     The item with the most revenue percentage is “GROW A FLYTRAP OR SUNFLOWER IN TIN”. But it will tend to decrease from 2020 to 2021.
+[2]Percent of total revenue: 
+
+-  “Set of 6 soldier skittles” has the highest increase from 2020 to 2021.
+- The item with the most revenue percentage is “GROW A FLYTRAP OR SUNFLOWER IN TIN”. But it will tend to decrease from 2020 to 2021.
   
-The item with the most inventory is “DOUGHNUT LIP GLOSS” which means the item is ordered way more than average. It also has grown from 2020 to 2021 => The company should increase the inventory stock on DOUGHNUT LIP GLOSS to meet customer demand and increase its profit.
+- The item with the most inventory is “DOUGHNUT LIP GLOSS” which means the item is ordered way more than average. It also has grown from 2020 to 2021 => The company should increase the inventory stock on DOUGHNUT LIP GLOSS to meet customer demand and increase its profit.
 
-A “Smart Purchasing” page report was created on Power BI Desktop 
+## “Smart Purchasing” 
 
   
+![Screenshot 2024-04-12 174528](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/31f7c424-085a-4303-a4f8-3592d041a629)
 
 
 Following inferences can be drawn from the dashboard;
+
   Based on two in the report, we realize that the item has the highest revenue (Set of 6 soldier skittles) and the item has lowest COGSRevenue (Woodland charlotte bag) not the same. This means the item that brings the highest revenue doesn't contribute to total profit much. The company should increase the inventory stock on Woodland charlotte bag to increase its profit.
 
-A “Inspecting Categories” page report was created on Power BI Desktop 
+##  “Inspecting Categories” 
 
+![Screenshot 2024-04-12 174703](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/193221b6-c879-4d1c-97b8-2001fc16e5b7)
 
   
 When filtering for medium value items, jewelry category disappears.
 When filtering for high value items, office & school and jewelry  category disappears.
 This mean that the items in office & school and jewelry  category don’t contribute to much for total revenue. However,office & school category has the highest Inventory turnover. The company should focus on to increase storage inventory in three of the other and reconsidering about quantity of office & school category to meet customer demand and optimal revenue.
 
+## Revenue And Class
 
+![Screenshot 2024-04-12 175257](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/62c1126b-d2c7-4ba5-8fa3-feca0ea99f2e)
 
-### [3] Average Delay 
-  
-      a) Average delay in arrival(minutes) - 15.09
-      b) Average delay in departure(minutes) - 14.71
-Average delay will change if different visual filters will be applied.
+- United Kingdom is the biggest consumer of the item.
+- DOUGHNUT LIP GLOSS has a high inventory turnover for having such a small revenue because the number of units ordered is relative low. This item could be has success with more inventory.
+# Summary
 
- ### [4] Some other insights
- 
- ### Class
- 
- 1.1) 47.87 % customers travelled by Business class.
- 
- 1.2) 44.89 % customers travelled by Economy class.
- 
- 1.3) 7.25 % customers travelled by Economy plus class.
- 
-         thus, maximum customers travelled by Business class.
- 
- ### Age Group
- 
- 2.1)  21.69 % customers belong to '0-25' age group.
- 
- 2.2)  52.44 % customers belong to '25-50' age group.
- 
- 2.3)  25.57 % customers belong to '50-75' age group.
- 
- 2.4)  0.31 % customers belong to '75-100' age group.
- 
-         thus, maximum customers belong to '25-50' age group.
-         
-### Customer Type
-
-3.1) 18.31 % customers have customer type 'First time'.
-
-3.2) 81.69 % customers have customer type 'returning'.
-       
-       thus, more customers have customer type 'returning'.
-
-### Type of travel
-
-4.1) 69.06 % customers have travel type 'Business'.
-
-4.2) 30.94 % customers have travel type 'Personal'.
-
-        thus, more customers have travel type 'Business'.
-
+-  DOUGHNUT LIP GLOSS has a the highest inventory turnover which means they sell this item fast.
+- GROW A FLYTRAP OR SUNFLOWER IN TIN has lead in sales.
+- SET OF 6 SOLDIER SKITTLES has increased in sales
+=> All three belong to class A
+- jewelry and office & school categories aren't in the A class which means they don't contribute too much to total revenue, however office & school category has the highest inventory turnover which means customers have high demand for this category.
+- United Kingdom is the biggest consumer
+- We should have approriate plan for  items have not only high revenue but also high COGSRevenue. This means the item that brings the highest revenue doesn't contribute to total profit much
