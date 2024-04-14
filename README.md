@@ -4,7 +4,7 @@
 
 
 ## Problem Statement
-Company Problem: WarmeHands Logistics Inc. spotted a risk about lose providers.
+Company Problem: WarmeHands Logistics Inc. is having problems managing its warehouse
 This dashboard helps fictitious Warm Hands Incorporated company figure out which are the best items for renewing or increasing inventory. Through different ratings, they get to know their improvement area, & thus they can optimize inventory control by identifying these areas. It also helps them reduce storage expenses, item costs, and unused goods and to increase profit , thus since using this dashboard they have identified this problem.
 
 
