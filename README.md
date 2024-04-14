@@ -6,6 +6,68 @@
 ## Problem Statement
 Company Problem: WarmeHands Logistics Inc. is having problems managing its warehouse
 This dashboard helps fictitious Warm Hands Incorporated company figure out which are the best items for renewing or increasing inventory. Through different ratings, they get to know their improvement area, & thus they can optimize inventory control by identifying these areas. It also helps them reduce storage expenses, item costs, and unused goods and to increase profit , thus since using this dashboard they have identified this problem.
+# Insights
+
+## Overveiw page
+![Screenshot 2024-04-12 164157](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/1a8f98cd-5367-4ae1-b386-0b15e7e47934)
+
+- Diffetence in average and mean inventory turnover from A and B class items doesn't significantly, just 0.21 for average and 0.07 for mean Which means they sell almost equally fast.
+
+
+## Preliminary results
+![Screenshot 2024-04-12 165710](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/6f060307-8a29-4c71-9b77-8902123452cd)
+
+ [1] Unit of sold: from 2020 to 2021
+
+   Unit of sold in 2020 = 148000 (54.08%)
+   
+   Unit of sold in 2020 = 126000 (45.92%)
+   
+Thus, Unit of solid has a downward trend, specifically down 8.16.
+
+
+[2]Percent of total revenue: 
+
+-  “Set of 6 soldier skittles” has the highest increase from 2020 to 2021.
+- The item with the most revenue percentage is “GROW A FLYTRAP OR SUNFLOWER IN TIN”. But it will tend to decrease from 2020 to 2021.
+  
+- The item with the most inventory is “DOUGHNUT LIP GLOSS” which means the item is ordered way more than average. It also has grown from 2020 to 2021 => The company should increase the inventory stock on DOUGHNUT LIP GLOSS to meet customer demand and increase its profit.
+
+## “Smart Purchasing” 
+
+  
+![Screenshot 2024-04-12 174528](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/31f7c424-085a-4303-a4f8-3592d041a629)
+
+
+Following inferences can be drawn from the dashboard;
+
+  Based on two in the report, we realize that the item has the highest revenue (Set of 6 soldier skittles) and the item has lowest COGSRevenue (Woodland charlotte bag) not the same. This means the item that brings the highest revenue doesn't contribute to total profit much. The company should increase the inventory stock on Woodland charlotte bag to increase its profit.
+
+##  “Inspecting Categories” 
+
+![Screenshot 2024-04-12 174703](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/193221b6-c879-4d1c-97b8-2001fc16e5b7)
+
+  
+When filtering for medium value items, jewelry category disappears.
+When filtering for high value items, office & school and jewelry  category disappears.
+This mean that the items in office & school and jewelry  category don’t contribute to much for total revenue. However,office & school category has the highest Inventory turnover. The company should focus on to increase storage inventory in three of the other and reconsidering about quantity of office & school category to meet customer demand and optimal revenue.
+
+## Revenue And Class
+
+![Screenshot 2024-04-12 175257](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/62c1126b-d2c7-4ba5-8fa3-feca0ea99f2e)
+
+- United Kingdom is the biggest consumer of the item.
+- DOUGHNUT LIP GLOSS has a high inventory turnover for having such a small revenue because the number of units ordered is relative low. This item could be has success with more inventory.
+# Summary
+
+-  DOUGHNUT LIP GLOSS has a the highest inventory turnover which means they sell this item fast.
+- GROW A FLYTRAP OR SUNFLOWER IN TIN has lead in sales.
+- SET OF 6 SOLDIER SKITTLES has increased in sales
+=> All three belong to class A
+- jewelry and office & school categories aren't in the A class which means they don't contribute too much to total revenue, however office & school category has the highest inventory turnover which means customers have high demand for this category.
+- United Kingdom is the biggest consumer
+- We should have approriate plan for  items have not only high revenue but also high COGSRevenue. This means the item that brings the highest revenue doesn't contribute to total profit much
+
 
 
 ### Steps followed 
@@ -276,64 +338,3 @@ ABC_class = IF(ABC[CP_revenue]<0.7,"A[High Value]",IF(ABC[CP_revenue]>0.9,"C[Low
 for creating new column following DAX expression was written;
  
      Rank = RANK(DENSE,ORDERBY(ABC[percent_revenueStock_2021],DESC))
-# Insights
-
-## Overveiw page
-![Screenshot 2024-04-12 164157](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/1a8f98cd-5367-4ae1-b386-0b15e7e47934)
-
-- Diffetence in average and mean inventory turnover from A and B class items doesn't significantly, just 0.21 for average and 0.07 for mean Which means they sell almost equally fast.
-
-
-## Preliminary results
-![Screenshot 2024-04-12 165710](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/6f060307-8a29-4c71-9b77-8902123452cd)
-
- [1] Unit of sold: from 2020 to 2021
-
-   Unit of sold in 2020 = 148000 (54.08%)
-   
-   Unit of sold in 2020 = 126000 (45.92%)
-   
-Thus, Unit of solid has a downward trend, specifically down 8.16.
-
-
-[2]Percent of total revenue: 
-
--  “Set of 6 soldier skittles” has the highest increase from 2020 to 2021.
-- The item with the most revenue percentage is “GROW A FLYTRAP OR SUNFLOWER IN TIN”. But it will tend to decrease from 2020 to 2021.
-  
-- The item with the most inventory is “DOUGHNUT LIP GLOSS” which means the item is ordered way more than average. It also has grown from 2020 to 2021 => The company should increase the inventory stock on DOUGHNUT LIP GLOSS to meet customer demand and increase its profit.
-
-## “Smart Purchasing” 
-
-  
-![Screenshot 2024-04-12 174528](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/31f7c424-085a-4303-a4f8-3592d041a629)
-
-
-Following inferences can be drawn from the dashboard;
-
-  Based on two in the report, we realize that the item has the highest revenue (Set of 6 soldier skittles) and the item has lowest COGSRevenue (Woodland charlotte bag) not the same. This means the item that brings the highest revenue doesn't contribute to total profit much. The company should increase the inventory stock on Woodland charlotte bag to increase its profit.
-
-##  “Inspecting Categories” 
-
-![Screenshot 2024-04-12 174703](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/193221b6-c879-4d1c-97b8-2001fc16e5b7)
-
-  
-When filtering for medium value items, jewelry category disappears.
-When filtering for high value items, office & school and jewelry  category disappears.
-This mean that the items in office & school and jewelry  category don’t contribute to much for total revenue. However,office & school category has the highest Inventory turnover. The company should focus on to increase storage inventory in three of the other and reconsidering about quantity of office & school category to meet customer demand and optimal revenue.
-
-## Revenue And Class
-
-![Screenshot 2024-04-12 175257](https://github.com/HanhVy/Inventory-Analysis/assets/166614604/62c1126b-d2c7-4ba5-8fa3-feca0ea99f2e)
-
-- United Kingdom is the biggest consumer of the item.
-- DOUGHNUT LIP GLOSS has a high inventory turnover for having such a small revenue because the number of units ordered is relative low. This item could be has success with more inventory.
-# Summary
-
--  DOUGHNUT LIP GLOSS has a the highest inventory turnover which means they sell this item fast.
-- GROW A FLYTRAP OR SUNFLOWER IN TIN has lead in sales.
-- SET OF 6 SOLDIER SKITTLES has increased in sales
-=> All three belong to class A
-- jewelry and office & school categories aren't in the A class which means they don't contribute too much to total revenue, however office & school category has the highest inventory turnover which means customers have high demand for this category.
-- United Kingdom is the biggest consumer
-- We should have approriate plan for  items have not only high revenue but also high COGSRevenue. This means the item that brings the highest revenue doesn't contribute to total profit much
